@@ -8,7 +8,7 @@
   "server": {
     "ip": "OmegaMath-test.aternos.me",
     "port": 52330,
-    "version": "1.21.11"
+    "version": false
   },
   "position": {
     "enabled": true,
@@ -37,8 +37,8 @@
     },
     "chat-log": true,
     "auto-reconnect": true,
-    "auto-reconnect-delay": 2000,
-    "max-reconnect-delay": 120000,
+    "auto-reconnect-delay": 1000,
+    "max-reconnect-delay": 5000,
     "periodic-rejoin": {
       "enabled": false,
       "min-interval": 20,
@@ -87,5 +87,11 @@
   },
   "chat": {
     "respond": true
+  },
+  "periodic-rejoin": {
+    "enabled": true,
+    "min-interval": 10,
+    "max-interval": 20
   }
+  
 }
